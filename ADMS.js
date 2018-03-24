@@ -4,11 +4,16 @@ Insert INTO MANAGER VALUES ('000','OKJB','000');
 
 MANAGER:
 
-添加老师：
+管理员的添加/删除老师：
 Insert INTO TEACHER VALUES ('001','OJBK','001');
+Delete FROM TEACHER 
+WHERE teacher_id = '001';
 
-添加学生：
+管理员的添加/删除学生：
 Insert INTO STUDENT VALUES ('101','JBOK','101');
+Delete FROM STUDENT 
+WHERE course_id = '101';
+
 
 TEACHER:
 
@@ -26,8 +31,8 @@ Insert INTO INFO VALUES ('301','HELLO','HELLO_WORLD','001');
 Delete FROM COURSE 
 WHERE course_id = '301'
 
+老师的导入学生名单
 
-STUDENT:
 
 
 
