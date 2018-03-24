@@ -17,23 +17,20 @@ WHERE course_id = '101';
 
 TEACHER:
 
-添加课程：
+添加/删除课程：
 Insert INTO COURSE VALUES ('201','UML','001','60');
-
-删除课程：
 Delete FROM COURSE 
 WHERE course_id = '201'
 
-发布公告：
+发布/删除公告：
 Insert INTO INFO VALUES ('301','HELLO','HELLO_WORLD','001');
-
-删除公告：
 Delete FROM COURSE 
 WHERE course_id = '301'
 
-老师的导入学生名单
-
-
+老师的导入/删除学生名单,这个是加入/删除COURSE_MEMBER中
+Insert INTO COURSE_MEMBER VALUES ('201','101');
+Delete FROM COURSE
+WHERE course_id = '301'
 
 
 
