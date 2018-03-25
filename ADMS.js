@@ -22,10 +22,13 @@ INSERT INTO COURSE VALUES ('201','UML','001','60');
 DELETE FROM COURSE 
 WHERE course_id = '201'
 
-发布/删除公告：
+发布/删除/查看公告：
 INSERT INTO INFO VALUES ('301','HELLO','HELLO_WORLD','001');
-DELETE FROM COURSE 
-WHERE course_id = '301'
+DELETE FROM INFO 
+WHERE info_id = '301'
+SELECT info_name,info_content
+FROM INFO
+WHERE info_id = '301'
 
 老师的导入/删除学生名单,这个是加入/删除COURSE_MEMBER中
 INSERT INTO COURSE_MEMBER VALUES ('201','101');
@@ -33,9 +36,13 @@ DELETE FROM COURSE_MEMBER
 WHERE student_id = '101'
 
 学生签到
-INSERT
+INSERT INTO SIGN_USER VALUES ('201','101','JBOK');
 
+随机点名(不太懂)
+SELECT
 
+查看签到结果
+SELECT * FROM SIGN_USER
 
 
 
